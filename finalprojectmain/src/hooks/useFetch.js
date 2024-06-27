@@ -12,7 +12,7 @@ const useFetch = (url) => {
         const response = await fetch(url, {
           method: 'GET',
           headers: {
-            'x-rapidapi-key': '31ae3fac10msh52fa05e411ad4dcp19e9c0jsn1ca4d57da83c',
+            'x-rapidapi-key': 'ee3fed16d0mshab4ccca019e6318p15db43jsnd5f379f76da6',
             'x-rapidapi-host': 'tasty.p.rapidapi.com'
           }
         });

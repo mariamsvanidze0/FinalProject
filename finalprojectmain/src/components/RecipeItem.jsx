@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './index.css';
 
 const RecipeItem = ({ recipe }) => {
   const navigate = useNavigate();
@@ -9,11 +10,11 @@ const RecipeItem = ({ recipe }) => {
   };
 
   return (
-    <li>
+    <li className="recipe-item">
       <h2>{recipe.name}</h2>
       <p>{recipe.description}</p>
-      <img src={recipe.thumbnail_url} alt={recipe.name} />
-      <button onClick={handleViewDetails}>View Details</button>
+      <img src={recipe.thumbnail_url} alt={recipe.name} className="recipe-thumbnail" />
+      <button onClick={handleViewDetails} className="view-details-button">View Details</button>
     </li>
   );
 };
